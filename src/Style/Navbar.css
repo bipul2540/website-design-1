@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 100vh;
+}
+
+.video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-left: 3em;
+  color: white;
+}
+.nav-logo .logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-logo i {
+  font-size: 1.5rem;
+}
+
+.nav-items {
+  transition: all ease 1s;
+}
+
+.nav-items ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  margin-right: 3em;
+}
+.nav-items ul li {
+  color: white;
+}
+
+.nav-items ul li .home,
+.about,
+.contact,
+.service {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: lighter;
+}
+
+.nav-items ul li .home:hover,
+.about:hover,
+.contact:hover,
+.service:hover {
+  border-bottom: 2px solid white;
+}
+
+.burger {
+  margin-right: 3em;
+  display: none;
+}
+.burger div {
+  width: 28px;
+  background-color: white;
+  padding: 1.6px;
+  margin-top: 3px;
+  border-radius: 2px;
+  transition: all ease 0.8s;
+}
+
+.toggle .list1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .list2 {
+  opacity: 0;
+}
+
+.toggle .list3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+
+/* FOR MOBILE VIEW */
+@media screen and (max-width: 668px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-items {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 45%;
+    transform: translateX(100%);
+  }
+
+  .nav-items2 {
+    transform: translateX(0);
+  }
+
+  .nav-items .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items .nav-links li {
+    margin-top: 2.5em;
+    padding: 10px 0;
+    width: 120%;
+  }
+
+  .nav-items .nav-links li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav-items ul li .home:hover,
+  .about:hover,
+  .contact:hover,
+  .service:hover {
+    border-bottom: none;
+  }
+}
