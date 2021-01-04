@@ -32,8 +32,8 @@ function Navbar() {
                 </Link>
               </li>
               <li className="link">
-                <Link className="about" to="about">
-                  About
+                <Link className="about" to="/food">
+                  Food
                 </Link>
               </li>
               <li className="link">
@@ -59,7 +59,6 @@ function Navbar() {
             <div className="list3"></div>
           </div>
         </div>
-        {/***/}
         <Buttons />
       </div>
     </React.Fragment>

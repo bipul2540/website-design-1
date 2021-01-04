@@ -10,8 +10,11 @@ export default function Buttons() {
           <p>what is stoping you..</p>
         </div>
         <div className="buttons">
-          <button className="btn-big transparent">GET STARTED</button>
-          <button className="btn-big filled">Watch TRAILER</button>
+          <button className="big-btn transparent">GET STARTED</button>
+          <button className="big-btn filled">
+            Watch TRAILER
+            <i className="fa fa-play-circle" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
